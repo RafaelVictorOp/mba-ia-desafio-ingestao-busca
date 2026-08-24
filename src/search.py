@@ -121,4 +121,4 @@ class SearchService:
         return self._session_store[session_id]
 
     def _read_context(self, question: str) -> list[Document]:
-        return self._store.similarity_search(question, k=3)
+        return self._store.similarity_search(question, k=10)
